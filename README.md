@@ -5,7 +5,7 @@ Public skill bundle for installing AgentCompiler API guidance into agent toolcha
 ## Files
 - `SKILL.md` - skill definition and usage guidance
 
-## Install (skills.sh)
+## Hosted Docs`n- Public docs/interface repo: https://github.com/leviathofnoesia/AgentCompiler`n- Hosted API base: https://agentcompilerapi.up.railway.app`n- Hosted dashboard: https://agentcompilerapi.up.railway.app/dashboard/`n`n## Install (skills.sh)
 
 ```bash
 npx skills add leviathofnoesia/agentcompiler-api-skill
