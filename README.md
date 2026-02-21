@@ -5,7 +5,12 @@ Public skill bundle for installing AgentCompiler API guidance into agent toolcha
 ## Files
 - `SKILL.md` - skill definition and usage guidance
 
-## Hosted Docs`n- Public docs/interface repo: https://github.com/leviathofnoesia/AgentCompiler`n- Hosted API base: https://agentcompilerapi.up.railway.app`n- Hosted dashboard: https://agentcompilerapi.up.railway.app/dashboard/`n`n## Install (skills.sh)
+## Hosted Docs
+- Public docs/interface repo: https://github.com/leviathofnoesia/AgentCompiler
+- Hosted API base: https://agentcompilerapi.up.railway.app
+- Hosted dashboard: https://agentcompilerapi.up.railway.app/dashboard/
+
+## Install (skills.sh)
 
 ```bash
 npx skills add leviathofnoesia/agentcompiler-api-skill
@@ -32,22 +37,6 @@ clawhub publish . --slug agentcompiler-api-skill --name "AgentCompiler API Skill
 ```bash
 # bump semver each publish
 clawhub publish . --slug agentcompiler-api-skill --name "AgentCompiler API Skill" --version 1.0.1 --changelog "docs: improve endpoint examples" --tags latest
-```
-
-## Create The Skill-Only GitHub Repo
-
-```bash
-# run from repository root
-mkdir -p temp-skill-repo
-cp -r skill-public/agentcompiler-api-skill/* temp-skill-repo/
-cd temp-skill-repo
-
-git init
-git add .
-git commit -m "feat: initial AgentCompiler API skill"
-git branch -M main
-git remote add origin https://github.com/leviathofnoesia/agentcompiler-api-skill.git
-git push -u origin main
 ```
 
 ## Notes
